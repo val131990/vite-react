@@ -1,5 +1,5 @@
 version: 0.2
- 
+
 phases:
   install:
     runtime-versions:
@@ -16,8 +16,8 @@ phases:
       - cd dist
       - zip -r ../build-output.zip .
       - echo Copying the build artifacts to S3...
-      - aws s3 cp ../build-output.zip s3://606951647902-deployment-artifact/
- 
+      - aws s3 cp ../build-output.zip s3://606951647902-deployment/
+
 artifacts:
   files:
-    - 'build-output.zip'
+    - "build-output.zip"
